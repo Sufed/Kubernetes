@@ -7,11 +7,11 @@ data:
     server {
         listen 80;
         root /usr/share/nginx/html;
-        index index.html;
+        index main.html;
 
         location / {
-            try_files $uri $uri/ /index.html;
+            try_files $uri $uri/ /main.html;
         }
         
-        error_page 404 /index.html;
+        error_page 404 /main.html;
     }

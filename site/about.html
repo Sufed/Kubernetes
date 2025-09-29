@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>О нас</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Мой Kubernetes Сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .tech-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>О нас</h1>
-    <p>Это страница "О нас" в моём сайте на Kubernetes.</p>
+    <div class="container">
+        <header class="header">
+            <h1>📄 О нас</h1>
+            <p>Узнайте больше о нашем проекте</p>
+        </header>
+
+        <div class="content">
+            <h2 style="color: #2c3e50; margin-bottom: 20px;">О нашем проекте</h2>
+            <p>Это демонстрационный веб-сайт, созданный для изучения и демонстрации возможностей Kubernetes.</p>
+            
+            <h3 style="color: #2c3e50; margin: 25px 0 15px 0;">🛠 Используемые технологии</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <strong>Kubernetes</strong>
+                    <p>Оркестратор контейнеров</p>
+                </div>
+                <div class="tech-item">
+                    <strong>Docker</strong>
+                    <p>Контейнеризация приложений</p>
+                </div>
+                <div class="tech-item">
+                    <strong>Nginx</strong>
+                    <p>Веб-сервер</p>
+                </div>
+                <div class="tech-item">
+                    <strong>HTML5/CSS3</strong>
+                    <p>Фронтенд технологии</p>
+                </div>
+            </div>
+
+            <h3 style="color: #2c3e50; margin: 25px 0 15px 0;">🎯 Цели проекта</h3>
+            <ul style="padding-left: 20px;">
+                <li>Изучение работы Kubernetes</li>
+                <li>Демонстрация развертывания веб-приложений</li>
+                <li>Освоение контейнеризации</li>
+                <li>Практика DevOps подходов</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-link">← Назад на главную</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Демонстрационный сайт на Kubernetes</p>
+    </footer>
 </body>
 </html>
