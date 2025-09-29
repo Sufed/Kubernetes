@@ -8,10 +8,39 @@ data:
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>Мой сайт на Kubernetes</title>
+        <title>Главная страница</title>
     </head>
     <body>
-        <h1>Привет, Kubernetes!</h1>
-        <p>Это мой сайт, работающий на Nginx внутри Minikube.</p>
+        <h1>Добро пожаловать!</h1>
+        <ul>
+            <li><a href="/about.html">Страница 1</a></li>
+            <li><a href="/contact.html">Страница 2</a></li>
+        </ul>
+    </body>
+    </html>
+  about.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>О сайте</title>
+    </head>
+    <body>
+      <h1>О сайте</h1>
+      <p>Этот сайт создан для обучения Kubernetes.</p>
+      <a href="/">Главная</a>
+    </body>
+    </html>
+  contact.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Контакты</title>
+    </head>
+    <body>
+      <h1>Контакты</h1>
+      <p>Email: example@k8s.local</p>
+      <a href="/">Главная</a>
     </body>
     </html>
